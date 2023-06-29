@@ -24,4 +24,6 @@ spring:
         jwt:
           issuer-uri: http://localhost:8080/realms/cloud-ui-three
           jwk-set-uri: http://localhost:8080/realms/cloud-ui-three/protocol/openid-connect/certs
-
+logging:
+  level:
+    web: debug

@@ -12,3 +12,7 @@ aws:
     secretKey: localstack
     tableName: "DesignDetails"
     indexName: "UserIdIndex"
+
+logging:
+  level:
+    web: debug
