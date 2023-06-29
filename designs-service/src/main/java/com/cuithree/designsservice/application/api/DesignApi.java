@@ -37,8 +37,8 @@ public class DesignApi {
                 .map(ResponseEntity::ok);
     }
 
-    @DeleteMapping("/{id}/{userId}")
-    public Mono<ResponseEntity<Void>> deleteDesign(@PathVariable("id") String id, @PathVariable("userId") String userId) {
+    @DeleteMapping("/{userId}/{id}")
+    public Mono<ResponseEntity<Void>> deleteDesign(@PathVariable("userId") String userId, @PathVariable("id") String id) {
         return designService.deleteExistingItem(id, userId)
                 .map(ResponseEntity::ok);
     }

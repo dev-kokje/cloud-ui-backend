@@ -6,6 +6,7 @@ public record Element(
         @Field("id")
         Integer id,
         String icon,
+        String code,
         String shortName,
         String fullName
 ) {}
